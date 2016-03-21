@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <customer_account_create>
+        <reference name="form.additional.info">
+            <block type="page/html" name="linfield" output="toHtml" template="echomage/linfield/linfield_register.phtml" />
+        </reference>
+    </customer_account_create>
+    <customer_account>
+        <!--reference name="customer.account.dashboard.info" -->
+        <reference name="content">
+            <block type="page/html" name="linfield" output="toHtml" template="echomage/linfield/linfield_dashboard.phtml" />
+        </reference>
+    </customer_account>
+    <customer_account_edit>
+        <reference name="my.account.wrapper">
+            <block type="customer/form_edit" name="customer_edit" template="echomage/linfield/linfield_edit.phtml" />
+        </reference>
+    </customer_account_edit>
+</layout>

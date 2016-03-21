@@ -1,0 +1,18 @@
+<?php
+    $linfieldHelper = Mage::helper('linfield');
+?>
+<?php if ($linfieldHelper->isMandatory()): ?>
+    <li>
+        <label for="linfield" class="required"><em>*</em>LinkedIn url</label>
+        <div class="input-box">
+            <input type="text" autocapitalize="off" autocorrect="off" spellcheck="false" name="linfield_url" id="linfield_url" value="" title="LinkedIn url" class="input-text validate-url required-entry">
+        </div>
+    </li>
+<?php else: ?>
+    <li>
+        <label for="linfield" >LinkedIn url</label>
+        <div class="input-box">
+            <input type="text" autocapitalize="off" autocorrect="off" spellcheck="false" name="linfield_url" id="linfield_url" value="" title="LinkedIn url" class="input-text validate-url">
+        </div>
+    </li>
+<?php endif; ?>

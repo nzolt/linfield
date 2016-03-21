@@ -1,0 +1,16 @@
+<div class="dashboard">
+    <div class="box-account box-info">
+        <div class="box-head">
+            <h2><?php echo $this->__('LinkedIn url') ?></h2>
+            <div class="box-content">
+                <p>
+                    <?php
+                    $customer = Mage::getSingleton('customer/session')->getCustomer();
+                    $customerObj  = Mage::getModel('customer/customer')->load($customer->getId());
+                    echo $customerObj->getData('linfield_url');
+                    ?>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

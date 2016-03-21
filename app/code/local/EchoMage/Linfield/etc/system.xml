@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+	<sections>
+		<customer  translate="label" module="linfield">
+			<groups>
+				<linkedingroup translate="label">
+					<label>LinkedIn url</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>100</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<linfield_required translate="label">
+							<label>LinkerdIn url required</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</linfield_required>
+					</fields>
+				</linkedingroup>
+			</groups>
+		</customer>
+	</sections>
+</config>

@@ -1,0 +1,23 @@
+{
+  "name": "nzolt/linfield",
+  "license": "Apache-2.0",
+  "type": "magento-module",
+  "description": "LinkedIn user field module",
+  "homepage": "http://dotweb.hu/linfield",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.firegento.com"
+    }
+  ],
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*",
+    "ecomdev/ecomdev_phpunit": "*"
+  },
+  "authors":[{
+    "name": "Zoltan Nagy"
+  }],
+  "extra": {
+    "magento-root-dir": "magento"
+  }
+}
